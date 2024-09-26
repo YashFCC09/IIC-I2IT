@@ -1,0 +1,123 @@
+body {
+    background-color: #f7f7f7; /* Light cream background */
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Space out the logo and links */
+    align-items: center;
+    padding: 20px;
+    background-color: #fff; /* White background for the navigation */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav img {
+    margin: 0 15px; /* Space between logos */
+}
+
+h2{
+    font-weight: 800;
+    
+}
+
+.nav-links {
+    flex-grow: 1; /* Allow the links to grow and take available space */
+}
+
+.nav-links ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    display: flex; /* Align items horizontally */
+    justify-content: flex-start; /* Align menu items to the left */
+}
+
+.nav-links ul li {
+    margin: 0 15px; /* Space between items */
+}
+
+.nav-links ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Set link color to black */
+    font-weight: 600; /* Bold text for better visibility */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.nav-links ul li a:hover {
+    color: black; /* Keep hover color black */
+}
+
+
+h1, h2 {
+    color: #333; /* Darker text for headers */
+}
+
+.card {
+    margin: 15px;
+    border: none;
+    border-radius: 15px; /* Rounded corners for cards */
+    transition: transform 0.2s; /* Animation effect on hover */
+    overflow: hidden; /* Ensures content stays within rounded corners */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.team-card {
+    margin: 15px;
+    border: 2px solid #e2e2e2; /* Add border around the cards */
+    border-radius: 15px; /* Rounded corners for cards */
+    transition: transform 0.2s; /* Animation effect on hover */
+    overflow: hidden; /* Ensures content stays within rounded corners */
+}
+
+.team-img {
+    width: 100%; /* Full width to fit the card */
+    height: 300px; /* Increase the fixed height for images */
+    object-fit: cover; /* Cover the area without distortion */
+    border-radius: 15px 15px 0 0; /* Rounded corners at the top */
+}
+
+
+.card-body {
+    padding: 15px; /* Add padding to the card body */
+}
+
+.card-title {
+    font-size: 1.25rem; /* Font size for card titles */
+    font-weight: bold;
+}
+
+.card-text {
+    color: #666; /* Grey color for card text */
+}
+
+.footer {
+    background-color: #f8f9fa; /* Light grey background for footer */
+    padding: 20px; /* Padding for footer */
+    text-align: center; /* Center align text in footer */
+}
+
+.footer h4 {
+    margin-bottom: 15px; /* Space below footer title */
+}
+
+.footer p {
+    color: #666; /* Grey color for footer text */
+}
+
+.icons {
+    margin-top: 15px; /* Space above icons */
+}
+
+.icons a {
+    margin: 0 10px; /* Space between icons */
+    color: #333; /* Dark color for icons */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.icons a:hover {
+    color: #007bff; /* Change color on hover (optional) */
+}
