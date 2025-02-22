@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a); /* Gradient background */
+    color: #f0f0f0;
+    transition: background 0.5s ease; /* Smooth background transition */
+}
+
+.feedback-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.feedback-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    animation: fadeIn 1s ease; /* Fade in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.feedback-left-title h2 {
+    font-weight: 600;
+    color: #ff994f;
+    font-size: 40px;
+    margin-bottom: 5px;
+    animation: slideIn 0.5s ease; /* Slide in animation */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.feedback-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #ff994f;
+    margin-bottom: 20px;
+}
+
+.feedback-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #f0f0f0;
+    background: #2b2b2b;
+    border-radius: 25px;
+    transition: background 0.3s ease, transform 0.3s ease; /* Transition for hover effects */
+}
+
+.feedback-inputs:focus {
+    border: 2px solid #ff994f;
+}
+
+.feedback-inputs:hover {
+    background: #3b3b3b; /* Slightly lighter on hover */
+    transform: scale(1.02); /* Scale effect */
+}
+
+.feedback-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 25px;
+    background: #2b2b2b;
+    color: #f0f0f0;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.feedback-left textarea:focus {
+    border: 2px solid #ff994f;
+}
+
+.feedback-left textarea:hover {
+    background: #3b3b3b;
+    transform: scale(1.02);
+}
+
+.feedback-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease; /* Transition for button */
+}
+
+.feedback-left button:hover {
+    background: linear-gradient(270deg, #fa6d86, #ff994f); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Scale effect */
+}
+
+.feedback-left button img {
+    height: 15px;
+}
+
+.feedback-right img {
+    width: 500px;
+    transition: transform 0.5s ease; /* Animation for image */
+}
+
+.feedback-right img:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+@media (max-width: 800px) {
+    .feedback-inputs {
+        width: 80vw;
+    }
+    .feedback-right {
+        display: none;
+    }
+}
